@@ -22,8 +22,7 @@ It covers **core Cloud Engineer skills**: EC2 provisioning, Security Groups, pas
 - Public IP auto-assigned.  
 
 **Screenshot:**  
-![AMI](screenshots/01-AMI.png)
-
+[![01-AMI](https://github.com/yashkumarunt/aws-ec2-windows-rdp-lab/blob/main/01-AMI.png)](https://github.com/yashkumarunt/aws-ec2-windows-rdp-lab/blob/main/01-AMI.png)
 ---
 
 ### 2️⃣ Instance Running
