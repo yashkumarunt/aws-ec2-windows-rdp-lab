@@ -1,66 +1,99 @@
-# Windows EC2 RDP Lab (AWS)
+# 🖥️ AWS EC2 Windows RDP Lab
 
-**Goal:** Deploy a **Windows Server (WS)** EC2 (**t3.micro – Free Tier**) and connect via **RDP (Remote Desktop Protocol)** using the **AWS-decrypted Administrator password**. Demonstrates **Networking (SG – Security Group)**, **IAM (Identity and Access Management)**, and **cost-safe operations**.
+This project demonstrates how to launch a **Windows Server EC2 instance** on AWS (Free Tier) and connect to it using **Remote Desktop (RDP)**.  
+It covers **core Cloud Engineer skills**: EC2 provisioning, Security Groups, password decryption with PEM, and RDP connectivity.
 
-## Architecture (High-level)
-- **Region**: `us-east-1 (N. Virginia)`
-- **EC2**: Windows Server 2019, `t3.micro`
-- **Access**: RDP (TCP 3389) from **My IP**
-- **IAM**: Key pair for decrypting Windows password (no secrets committed)
+---
 
-## Steps
+## 📌 Lab Overview
+- **Region:** us-east-1 (N. Virginia)  
+- **Instance Type:** t3.micro (Free Tier eligible)  
+- **AMI:** Microsoft Windows Server 2019 Base  
+- **Access Method:** Remote Desktop Protocol (RDP)  
+- **Security:** Inbound rule for RDP (TCP 3389) restricted to my IP  
 
-### 1) Launch EC2
-- AMI (Amazon Machine Image): *Microsoft Windows Server 2019 Base*
-- Instance type: `t3.micro` (**Free Tier**)
-- Auto-assign Public IP: **Enabled**
-- SG (Security Group): RDP **3389** from **My IP**
-- ✅ Status checks = **Passed**
+---
 
-**Screenshot:**  
-![Instances dashboard](screenshots/instance-dashboard.png)
+## 🚀 Steps Performed
 
-### 2) Instance details
-- Public IPv4, DNS, AZ visible
-- Stop protection: Disabled (lab)
-- Root volume: default
+### 1️⃣ Launch Windows EC2
+- Selected Windows Server 2019 AMI.  
+- Instance type: `t3.micro`.  
+- Public IP auto-assigned.  
 
 **Screenshot:**  
-![Instance details](screenshots/instance-details.png)
+![AMI](screenshots/01-AMI.png)
 
-### 3) Networking & Security
-- Inbound rule: **RDP (TCP 3389)** → **My IP**
-- Principle of least exposure (no 0.0.0.0/0 in production)
+---
+
+### 2️⃣ Instance Running
+- Verified in AWS Console.  
+- Instance state = Running ✅  
+- Status checks = Passed ✅  
 
 **Screenshot:**  
-![Security group rule](screenshots/security-group.png)
+![AWS Console](screenshots/02-aws-console.png)
 
-### 4) Obtain Windows password
-- EC2 → **Connect** → **RDP client** → **Get Password**
-- Upload **.pem** → Decrypt → Copy **Administrator** password
+---
 
-**Screenshot (password blurred):**  
-![Get password](screenshots/get-password.png)
+### 3️⃣ Decrypt Windows Password
+- EC2 → Connect → RDP Client → Get Password.  
+- Uploaded `.pem` file.  
+- Decrypted the Administrator password (blurred in screenshot).  
 
-### 5) Connect via RDP
-- Download **.rdp** file from EC2 → open with mstsc
-- User: **Administrator**
-- Paste decrypted password → accept certificate → log in
+**Screenshot:**  
+![Decrypt Password](screenshots/03-decrypted-password.png)
 
-**Screenshots:**  
-![RDP login](screenshots/rdp-login.png)  
-![Windows desktop](screenshots/windows-desktop.png)
+---
 
-## Clean-up (Cost-safe)
-- **Stop** instance when idle (compute $0; storage billed).
-- **Terminate** when done (deletes instance + EBS, stops billing).
+### 4️⃣ RDP Login
+- Downloaded `.rdp` file from AWS Console.  
+- Opened in mstsc.  
+- Used Administrator username + decrypted password.  
 
-## Skills Demonstrated
-- **EC2 (Elastic Compute Cloud)** provisioning
-- **Networking**: Security Groups, Public IPs
-- **Identity**: Key pair usage, password decrypt flow
-- **Ops hygiene**: Cost controls, documentation, screenshots
+**Screenshot:**  
+![RDP Login](screenshots/04-rdp-login.png)
 
-## Notes
-- No secrets or keys committed. Screenshots redacted where needed.
-- Region: `us-east-1`. Free Tier-friendly configuration.
+---
+
+### 5️⃣ Public IP Assigned
+- Copied Public IPv4 address to connect via RDP.  
+
+**Screenshot:**  
+![Public IP](screenshots/05-public-ip.png)
+
+---
+
+### 6️⃣ Security Group Rules
+- Configured inbound rules for **RDP (3389)** from **My IP**.  
+
+**Screenshot:**  
+![Security Group](screenshots/06-security-groups.png)
+
+---
+
+### 7️⃣ Inside Windows Desktop
+- Successfully logged into Windows Server EC2.  
+- Verified via Command Prompt (`hostname`).  
+
+**Screenshot:**  
+![Inside Windows Desktop](screenshots/07-inside-windows-desktop.png)
+
+---
+
+## 🧹 Clean-Up
+- Stopped/terminated instance to avoid charges.  
+- Free Tier covers t3.micro + 30 GB storage.  
+
+---
+
+## 🛠️ Skills Demonstrated
+- **EC2 provisioning** (Windows workload)  
+- **Networking** (Security Groups, RDP access)  
+- **Identity** (Key pair usage, password decrypt flow)  
+- **Ops hygiene** (Cost controls, cleanup)  
+- **Documentation** (GitHub repo with screenshots)  
+
+---
+
+## 📂 Repository Structure
