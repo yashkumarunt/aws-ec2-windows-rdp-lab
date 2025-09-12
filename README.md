@@ -31,8 +31,7 @@ It covers **core Cloud Engineer skills**: EC2 provisioning, Security Groups, pas
 - Status checks = Passed ✅  
 
 **Screenshot:**  
-![AWS Console](screenshots/02-aws-console.png)
-
+[![02-aws-console](https://github.com/yashkumarunt/aws-ec2-windows-rdp-lab/blob/main/02-aws-console.png)](https://github.com/yashkumarunt/aws-ec2-windows-rdp-lab/blob/main/02-aws-console.png)
 ---
 
 ### 3️⃣ Decrypt Windows Password
