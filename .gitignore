@@ -1,0 +1,15 @@
+# Never commit keys or creds
+*.pem
+*.ppk
+*.key
+*.crt
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editors
+*.swp
+*.swo
+.vscode/
+.idea/
