@@ -40,8 +40,7 @@ It covers **core Cloud Engineer skills**: EC2 provisioning, Security Groups, pas
 - Decrypted the Administrator password (blurred in screenshot).  
 
 **Screenshot:**  
-![Decrypt Password](screenshots/03-decrypted-password.png)
-
+[![03-decrypted-password](https://github.com/yashkumarunt/aws-ec2-windows-rdp-lab/blob/main/03-decrypted-password.png)](https://github.com/yashkumarunt/aws-ec2-windows-rdp-lab/blob/main/03-decrypted-password.png)
 ---
 
 ### 4️⃣ RDP Login
