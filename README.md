@@ -1,4 +1,4 @@
-# 🖥️ AWS EC2 Windows RDP Lab
+# 🖥️ AWS EC2 Windows RDP
 
 This project demonstrates how to launch a **Windows Server EC2 instance** on AWS (Free Tier) and connect to it using **Remote Desktop (RDP)**.  
 It covers **core Cloud Engineer skills**: EC2 provisioning, Security Groups, password decryption with PEM, and RDP connectivity.
