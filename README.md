@@ -49,7 +49,8 @@ It covers **core Cloud Engineer skills**: EC2 provisioning, Security Groups, pas
 - Used Administrator username + decrypted password.  
 
 **Screenshot:**  
-![RDP Login](screenshots/04-rdp-login.png)
+[![04-rdp-login](https://github.com/yashkumarunt/aws-ec2-windows-rdp-lab/blob/main/04-rdp-login.png)](https://github.com/yashkumarunt/aws-ec2-windows-rdp-lab/blob/main/04-rdp-login.png)
+
 
 ---
 
@@ -57,16 +58,14 @@ It covers **core Cloud Engineer skills**: EC2 provisioning, Security Groups, pas
 - Copied Public IPv4 address to connect via RDP.  
 
 **Screenshot:**  
-![Public IP](screenshots/05-public-ip.png)
-
+[![05-public-ip](https://github.com/yashkumarunt/aws-ec2-windows-rdp-lab/blob/main/05-public-ip.png)](https://github.com/yashkumarunt/aws-ec2-windows-rdp-lab/blob/main/05-public-ip.png)
 ---
 
 ### 6️⃣ Security Group Rules
 - Configured inbound rules for **RDP (3389)** from **My IP**.  
 
 **Screenshot:**  
-![Security Group](screenshots/06-security-groups.png)
-
+[![06-security-groups](https://github.com/yashkumarunt/aws-ec2-windows-rdp-lab/blob/main/06-security-groups.png)](https://github.com/yashkumarunt/aws-ec2-windows-rdp-lab/blob/main/06-security-groups.png)
 ---
 
 ### 7️⃣ Inside Windows Desktop
@@ -74,8 +73,7 @@ It covers **core Cloud Engineer skills**: EC2 provisioning, Security Groups, pas
 - Verified via Command Prompt (`hostname`).  
 
 **Screenshot:**  
-![Inside Windows Desktop](screenshots/07-inside-windows-desktop.png)
-
+[![07-inside-windows-desktop](https://github.com/yashkumarunt/aws-ec2-windows-rdp-lab/blob/main/07-inside-windows-desktop.png)](https://github.com/yashkumarunt/aws-ec2-windows-rdp-lab/blob/main/07-inside-windows-desktop.png)
 ---
 
 ## 🧹 Clean-Up
