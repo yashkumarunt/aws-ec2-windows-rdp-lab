@@ -88,7 +88,3 @@ It covers **core Cloud Engineer skills**: EC2 provisioning, Security Groups, pas
 - **Identity** (Key pair usage, password decrypt flow)  
 - **Ops hygiene** (Cost controls, cleanup)  
 - **Documentation** (GitHub repo with screenshots)  
-
----
-
-## 📂 Repository Structure
